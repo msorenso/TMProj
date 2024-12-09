@@ -24,8 +24,8 @@ def load_machine(file_path):
         #parse machine description
         machine["name"] = lines[0][0]
         machine["states"] = lines[1]
-        machine["input_symbols"] = lines[2]
-        machine["tape_symbols"] = lines[3]
+        machine["sigma"] = lines[2]
+        machine["gamma"] = lines[3]
         machine["start_state"] = lines[4][0]
         machine["accept_state"] = lines[5][0]
         machine["reject_state"] = lines[6][0]
